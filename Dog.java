@@ -2,33 +2,33 @@ public class Dog
 {
     public Dog()
     {
-        this.name_ = "";
+        this.name = "";
     }
 
     public Dog(String name)
     {
-        this.name_ = name;
+        this.name = name;
     }
 
     public Dog(Dog otherDog)
     {
-        this.name_ = otherDog.name_;
+        this.name = otherDog.name;
     }
 
     public String getName()
     {
-        return name_;
+        return name;
     }
 
     public void setName(String name)
     {
-        this.name_ = name;
+        this.name = name;
     }
 
     @Override
     public String toString()
     {
-        return "Name : " + name_;
+        return "Name : " + name;
     }
 
     public boolean equals(Dog otherDog)
@@ -43,5 +43,5 @@ public class Dog
         }
     }
 
-    private String name_;
+    private String name;
 }
